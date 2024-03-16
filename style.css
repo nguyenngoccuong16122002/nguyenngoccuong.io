@@ -1,0 +1,86 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+header {
+    background-color: #4CAF50; /* Màu nền xanh (ví dụ) */
+    padding: 20px;
+    color: white; /* Màu chữ trắng */
+    overflow: auto; /* Đảm bảo header co dãn chứa cả avatar và thông tin cá nhân */
+}
+
+.profile {
+    float: left; /* Đưa avatar về phía trái */
+    margin-right: 20px; /* Tạo khoảng cách giữa avatar và thông tin cá nhân */
+}
+
+.profile img {
+    margin-top: 10px;
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.personal-info {
+    float: right; /* Đưa thông tin cá nhân về phía trái */
+    margin: 20px  ; 
+    padding: 10px ;/*
+}
+
+header h1, header p {
+    margin-bottom: 10px; /* Tạo khoảng cách giữa các phần tử h1 và p */
+}
+
+
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    margin-bottom: 15px;
+}
+
+.muctieu p {
+    font-style: italic;
+}
+
+.kynang p {
+    margin-bottom: 5px;
+}
+
+.sothich p {
+    margin-bottom: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profile {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile img {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
